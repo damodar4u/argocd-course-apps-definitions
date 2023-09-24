@@ -12,6 +12,8 @@ spec:
     path: helm-guestbook
     repoURL: "https://github.com/damodar4u/argocd-example-apps.git"
     targetRevision: master
+    helm:
+     releaseName: my-release
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
